@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<script>
+let cartCount = 0;
+
+function addToCart() {
+    cartCount++;
+    document.getElementById("cart-count").innerText = cartCount;
+    alert("Item added to cart!");
+}
+</script>
+<body>
+
+    <div class="navbar">
+        <div class="logo">amazon.in</div>
+
+        <div class="location">
+            Deliver to<br>
+            <b>India</b>
+        </div>
+
+        <div class="search">
+            <input type="text" placeholder="Search Amazon">
+            <button>🔍</button>
+        </div>
+
+        <div class="nav-item">
+            Hello, Sign in<br>
+            <b>Account & Lists</b>
+        </div>
+
+        <div class="nav-item">
+            Returns<br>
+            <b>& Orders</b>
+        </div>
+
+        <div class="cart">
+            🛒 Cart
+        </div>
+    </div>
+
+  
+    <div class="panel">
+        <a href="#">All</a>
+        <a href="#">Today's Deals</a>
+        <a href="#">Customer Service</a>
+        <a href="#">Gift Cards</a>
+        <a href="#">Sell</a>
+    </div>
+
+  
+    <div class="hero">
+        <h1>Shop Millions of Products</h1>
+    </div>
+
+      <div class="shop-section">
+
+        <div class="box">
+            <h2>Electronics</h2>
+            <img src="https://i.pinimg.com/webp/736x/b9/62/96/b9629642252c2f6c4a821b285bb0cb72.webp">
+            <p><b>See More</b></p>
+        </div>
+
+        <div class="box">
+            <h2>Fashion</h2>
+            <img src="https://i.pinimg.com/736x/13/1a/e3/131ae3ceab976f5fc4b6541337c5aebd.jpg">
+            <p><b>See More</b></p>
+        </div>
+
+        <div class="box">
+            <h2>Home Essentials</h2>
+            <img src="https://i.pinimg.com/736x/31/64/f3/3164f3134300065f3f9bcf9567f6d305.jpg">
+            <p><b>See More</b></p>
+        </div>
+
+        <div class="box">
+            <h2>Gaming</h2>
+            <img src="https://i.pinimg.com/webp/1200x/18/d5/f0/18d5f09c2b0f490761f0eda2684de610.webp">
+            <p><b>See More</b></p>
+        </div>
+
+    </div>
+
+  
+    <footer>
+        <p>Back to Top</p>
+        <div class="footer-bottom">
+            © 2026 Amazon
+        </div>
+    </footer>
+
+</body>
+</html>

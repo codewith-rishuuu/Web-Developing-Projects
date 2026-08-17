@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>CinemaFlix — Unlimited Movies, Shows & More</title>
+<meta name="description" content="CinemaFlix — stream unlimited movies and shows." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="portal-loader" id="portalLoader">
+    <div class="portal-panel left"></div>
+    <div class="portal-panel right"></div>
+    <div class="portal-center">
+      <span class="portal-seam"></span>
+      <div class="portal-name">CINEMA<span>FLIX</span></div>
+    </div>
+  </div>
+
+  <div class="liquid-bg" aria-hidden="true">
+    <span class="blob b1"></span>
+    <span class="blob b2"></span>
+  </div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="nav glass" id="nav">
+    <a href="#" class="logo">CINEMA<span>FLIX</span></a>
+    <nav class="nav-links">
+      <a href="#trending">Trending</a>
+      <a href="#reasons">Why Us</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="nav-actions">
+      <select aria-label="Language">
+        <option>English</option>
+        <option>हिन्दी</option>
+        <option>Japanese</option>
+        <option>Spanish</option>
+        <option>Portuguese</option>
+        <option>Français</option>
+      </select>
+      <button class="btn btn-accent ripple" data-portal>Sign In</button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content reveal">
+      <h1>Unlimited movies, shows &amp; more</h1>
+      <h2>Start at ₹149. Cancel anytime.</h2>
+      <p>Ready to watch? Enter your email to create or restart your membership.</p>
+      <form class="email-box glass" id="emailForm">
+        <input type="email" required placeholder="Email address" aria-label="Email address" />
+        <button type="submit" class="btn btn-accent ripple">Get Started ›</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="section" id="trending">
+    <h3 class="section-title">Trending Now</h3>
+    <div class="chips" id="chips">
+      <button class="chip active" data-filter="all">All</button>
+      <button class="chip" data-filter="action">Action</button>
+      <button class="chip" data-filter="romance">Romance</button>
+      <button class="chip" data-filter="classic">Classics</button>
+      <button class="chip" data-filter="bolly">Bollywood</button>
+    </div>
+
+    <div class="rail-wrap">
+      <button class="rail-arrow left" data-dir="-1" aria-label="Scroll left">‹</button>
+      <div class="rail" id="rail"></div>
+      <button class="rail-arrow right" data-dir="1" aria-label="Scroll right">›</button>
+    </div>
+  </section>
+
+  <section class="section" id="reasons">
+    <h3 class="section-title">More reasons to join</h3>
+    <div class="reasons">
+      <div class="reason-card glass reveal">
+        <h4>Enjoy on your TV</h4>
+        <p>Watch on Smart TVs, PlayStation, Xbox, Chromecast, Apple TV &amp; more.</p>
+      </div>
+      <div class="reason-card glass reveal">
+        <h4>Download to watch offline</h4>
+        <p>Save your favourites easily and always have something to watch.</p>
+      </div>
+      <div class="reason-card glass reveal">
+        <h4>Watch everywhere</h4>
+        <p>Stream on your phone, tablet, laptop and TV without limits.</p>
+      </div>
+      <div class="reason-card glass reveal">
+        <h4>Create profiles for kids</h4>
+        <p>Send kids on adventures in a space made just for them.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section faq" id="faq">
+    <h3 class="section-title">Frequently Asked Questions</h3>
+    <div class="faq-list" id="faqList"></div>
+  </section>
+
+  <footer class="footer glass">
+    <div class="footer-grid">
+      <div>
+        <a href="#" class="logo small">CINEMA<span>FLIX</span></a>
+        <p class="muted">Cinema, reimagined.</p>
+      </div>
+      <div><h5>Company</h5><a href="#">About</a><a href="#">Careers</a><a href="#">Press</a></div>
+      <div><h5>Support</h5><a href="#">Help Centre</a><a href="#">Contact</a><a href="#">Devices</a></div>
+      <div><h5>Legal</h5><a href="#">Terms</a><a href="#">Privacy</a><a href="#">Cookies</a></div>
+    </div>
+    <p class="copyright muted">© 2026 CinemaFlix. Built for educational purposes.</p>
+  </footer>
+
+  <div class="modal-overlay" id="modal" aria-hidden="true">
+    <div class="modal glass" role="dialog" aria-modal="true">
+      <button class="modal-close" id="modalClose" aria-label="Close">×</button>
+      <img class="modal-poster" id="mPoster" alt="" />
+      <div class="modal-info">
+        <h2 id="mTitle"></h2>
+        <div class="modal-meta"><span id="mYear"></span><span id="mGenre"></span><span class="rating" id="mRating"></span></div>
+        <p id="mDesc"></p>
+        <button class="btn btn-accent ripple" id="modalTrailerBtn">▶ Watch Trailer</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                url("https://images.unsplash.com/photo-1501785888041-af3ef285b470");
+    background-size: cover;
+    height: 100vh;
+    color: white;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+}
+
+.logo{
+    font-size: 40px;
+    font-weight: bold;
+    color: orange;
+}
+
+.logo span{
+    color: white;
+}
+
+nav a{
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.search-box input{
+    padding: 6px;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+}
+
+.search-box button{
+    padding: 6px 10px;
+    background: orange;
+    border: none;
+    cursor: pointer;
+    border-radius: 2px;
+    font-style: sans-serif;
+}
+
+
+.main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+}
+
+.content{
+    width: 50%;
+}
+
+.content h1{
+    font-size: 45px;
+}
+
+.content h1 span{
+    color: orange;
+}
+
+.content p{
+    margin: 20px 0;
+    line-height: 1.6;
+}
+
+.join-btn{
+    background: orange;
+    border: none;
+    padding: 10px 25px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+.login-box{
+    background: rgba(0,0,0,0.5);
+    padding: 30px;
+    width: 280px;
+    border-radius: 10px;
+    text-align: center;
+    
+}
+
+.login-box h2{
+    background: white;
+    color: orange;
+    padding: 8px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+.login-box input{
+    width: 100%;
+    margin: 10px 0;
+    padding: 8px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid orange;
+    color: white;
+}
+
+.login-btn{
+    width: 100%;
+    padding: 8px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background: orange;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.login-box a{
+    color: orange;
+    text-decoration: none;
+}
+
+.login-with{
+    margin-top: 15px;
+}
+
+.icons span{
+    display: inline-block;
+    background: white;
+    color: black;
+    margin: 5px;
+    margin-top: 7px;
+    padding: 5px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
